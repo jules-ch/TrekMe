@@ -303,6 +303,7 @@ class GoogleMapWmtsViewFragment : Fragment() {
             MapSource.USGS -> checkUSGSProvider(tileStreamProvider)
             MapSource.OPEN_STREET_MAP -> checkOSMProvider(tileStreamProvider)
             MapSource.SWISS_TOPO -> checkSwissTopoProvider(tileStreamProvider)
+            MapSource.ORDNANCE_SURVEY -> checkOrdnanceSurveyProvider(tileStreamProvider)
         }
     }
 

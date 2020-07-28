@@ -34,5 +34,9 @@ fun createTileStreamProvider(mapSource: MapSource, mapSourceData: MapSourceData)
             val urlTileBuilder = UrlTileBuilderSwiss()
             TileStreamProviderSwiss(urlTileBuilder)
         }
+        MapSource.ORDNANCE_SURVEY -> {
+            val urlTileBuilder = UrlTileBuilderOrdnanceSurvey()
+            TileStreamProviderOrdnanceSurvey(urlTileBuilder)
+        }
     }
 }
